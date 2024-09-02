@@ -1,0 +1,262 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 600px;
+}
+
+header {
+  width: 100%;
+}
+
+.header2 a {
+  text-decoration: none;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+}
+
+.header2 img {
+  margin-left: 100px;
+  height: 70px;
+}
+
+
+
+.datosHeader {
+  font-family: 'Philosopher';
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  align-items: center;
+  justify-content: end;
+  width: 90%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:not(.btnContacto):hover {
+  color: white;
+  background-color: #00E676;
+  border-radius: 5px;
+}
+
+.btnContacto {
+  font-size: 30px;
+  background-color: #00E676;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  font-size: 20px;
+  font-family: 'Philosopher';
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  z-index: 10000;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.background {
+
+  justify-content: space-around;
+  padding-left: 200px;
+  padding-right: 100px;
+  color: white;
+  background-color: #252525;
+  height: 100%;
+}
+
+.background h1 {
+  color: #00E676 !important;
+  font-family: 'Philosopher';
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cuerpo {
+  margin-right: 100px;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(2, 300px);
+  grid-template-columns: 400px 400px 400px;
+  gap: 50px 50px;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.text p {
+  color: black
+}
+
+.tituloQN h1 {
+  padding-top: 50px;
+  color: #00E676 !important;
+  font-family: 'Philosopher';
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1330px) {
+  body {
+    height: auto;
+  }
+
+  .cuerpo {
+    display: grid;
+    grid-template-rows: repeat(3, 300px);
+    grid-template-columns: 400px 400px;
+  }
+}
+
+@media (max-width: 880px) {
+
+  .cuerpo {
+    display: grid;
+    grid-template-rows: repeat(6, 300px);
+    grid-template-columns: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header2 img {
+    margin: 0;
+    height: 50px;
+    margin-bottom: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 5px 0;
+  }
+
+  .btnContacto {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .background {
+    justify-content: center;
+    margin-top: 400px;
+  }
+
+  .tituloQN {
+    width: 500px;
+    text-align: left;
+    margin-right: 100px;
+
+  }
+
+  .tituloQS {
+    text-align: left;
+    margin-left: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .background {
+    margin-top: 400px;
+    padding-left: 10px;
+  }
+
+  .background .text {
+    width: 60%;
+    margin-left: 150px;
+  }
+}

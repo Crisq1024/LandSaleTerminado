@@ -1,0 +1,746 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+.header2 a {
+  text-decoration: none;
+}
+
+.header2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  padding: 10px 20px;
+
+}
+
+.header2 img {
+  margin-left: 100px;
+  height: 70px;
+}
+
+
+
+.datosHeader {
+  font-family: 'Philosopher';
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  align-items: center;
+  justify-content: end;
+  width: 90%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  display: inline;
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-menu li a:not(.btnContacto):hover {
+  color: white;
+  background-color: #00E676;
+  border-radius: 5px;
+}
+
+.btnContacto {
+  font-size: 30px;
+  background-color: #00E676;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 50px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  right: 20px;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  font-size: 20px;
+  font-family: 'Philosopher';
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  z-index: 10000;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.background {
+  justify-content: left;
+  align-items: left;
+  width: 98%;
+  height: 400px;
+  background-image: url('../imagenes/bkValleGrande.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;
+}
+
+.background * {
+  position: relative;
+  z-index: 2;
+}
+
+.tituloBck {
+  margin-left: 8%;
+  width: 600px;
+  border-radius: 15px;
+  font-family: 'Philosopher';
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 6%;
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+}
+
+.urbanizatit {
+  font-size: 48px;
+  color: white;
+  width: 700px;
+  background-color: #00E676;
+  margin-top: 50px;
+  font-family: 'Philosopher';
+  justify-content: right;
+  text-align: right;
+  border-radius: 20px;
+  margin-left: auto;
+  display: block;
+  padding-right: 50px;
+}
+
+.tipUrbanizacion h1 {
+  background-color: #00E676;
+  font-family: 'Philosopher';
+  color: white;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.tipUrbanizacion {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+}
+
+.row {
+  margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.tipUrbanizacion h1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.Caracteristicas {
+  margin-bottom: 100px;
+}
+
+.caracteristicasURB {
+  font-family: 'Philosopher';
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.caracteristicasURB p {
+  padding-left: 10px;
+  width: 100px;
+}
+
+.Caracteristicas img {
+  margin-right: 10px;
+  align-self: center;
+  height: 40px !important;
+}
+
+.imgPlano {
+  margin-right: 400px;
+  width: auto;
+  height: 800px;
+  margin-bottom: 100px;
+}
+
+.imgPlano2 {
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+}
+
+.urb {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+.urb img {
+  margin-left: 50px;
+  justify-content: space-between;
+}
+
+.urb p {
+  margin-right: 50px;
+}
+
+footer {
+  margin-top: 100px;
+  color: white;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Philosopher';
+}
+
+.container-dato {
+  margin-top: 20px;
+  margin-right: 40px;
+  margin-left: 150px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.ubicacion {
+  padding-left: 50px;
+  font-size: 48px;
+  color: white;
+  width: 500px;
+  background-color: #00E676;
+  margin-top: 50px;
+  font-family: 'Philosopher';
+  justify-content: right;
+  border-radius: 20px;
+  margin-right: auto;
+  display: block;
+  padding-right: 50px;
+}
+
+.ubicacionText {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.map {
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.map iframe {
+
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footerLogo img {
+  margin-top: 10px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.datosFooter {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footerDescripion {
+  align-items: center;
+  width: 377px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footerDescripion p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: justify;
+}
+
+.footerDescripion img {
+  height: 40px;
+}
+
+.redes {
+  justify-content: center;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.redes a {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footerDescripion img {
+  display: block;
+  margin: 10px auto;
+}
+
+.extra {
+  margin-left: 50px;
+  width: 200px;
+}
+
+.container-servicios {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+.container-servicios a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.container-recursos {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.container-recursos a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.container-soporte {
+  width: 200px;
+  margin-left: 50px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+.container-soporte a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1600px) {
+  .imgPlano {
+    margin-right: 200px;
+    height: 600px;
+  }
+
+  .imgPlano2 {
+    margin-right: 300px;
+    height: 600px;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .imgPlano {
+    margin-right: 100px;
+    height: 500px;
+  }
+
+  .imgPlano2 {
+    margin-right: 0px;
+    height: 500px;
+  }
+
+}
+
+@media (max-width: 1240px) {
+  .imgPlano {
+    margin-right: 0px;
+    height: 400px;
+  }
+
+}
+
+@media (max-width: 1300px) {
+  .container-dato {
+    margin-left: 10%;
+    justify-content: left;
+  }
+
+  .footerDescripion {
+    margin-left: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1150px) {
+  .imgPlano {
+    width: auto;
+  }
+
+  .tipUrbanizacion {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .imgPlano {
+    margin-right: 30%;
+    margin-left: 50%;
+    margin-bottom: 100px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .imgPlano {
+    margin-right: 200px;
+    width: auto;
+  }
+
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .header2 img {
+    margin: 0;
+    height: 50px;
+    margin-bottom: 100%;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 5px 0;
+  }
+
+  .btnContacto {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  .background {
+    text-align: left;
+    margin-top: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .tituloBck {
+    font-size: 48px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .textUrb {
+    font-size: 30px;
+  }
+
+  .urbanizatit {
+    width: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .urbanizacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tipUrbanizacion {
+    width: 80%;
+  }
+
+  .caracteristicasURB {
+    width: auto;
+  }
+
+  .container-dato {
+    margin-left: 10%;
+    justify-content: left;
+  }
+
+  .footerDescripion {
+    margin-left: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 565px) {
+  .imgPlano {
+    margin-right: 200px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imgPlano {
+    margin-right: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 100%;
+  }
+
+  .header2 {
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 100%;
+  }
+
+  .header2 img {
+    height: 45px;
+  }
+
+  .nav-menu a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .btnContacto {
+    font-size: 18px;
+  }
+
+  .background {
+    justify-content: left;
+    margin-top: 10%;
+    width: auto;
+    height: auto;
+  }
+
+  .tituloBck {
+    width: auto;
+    text-align: left;
+    font-size: 28px;
+  }
+
+  .container-datos2 {
+    width: 90%;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .datos2 {
+    font-size: 15px;
+  }
+
+  .urbanizatit {
+    width: 100%;
+  }
+
+  .urbanizacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .caracteristicasURB {
+    margin-left: 70px;
+    align-items: center;
+    width: auto;
+  }
+
+  .caracteristicasURB p {
+    width: 60px;
+  }
+
+  .caracteristicasURB img {
+    margin-left: 0%;
+
+  }
+
+  .tipUrbanizacion {
+    width: auto;
+  }
+
+  .imgPlano {
+    margin-right: 230px;
+    height: 250px;
+  }
+
+  .extra {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-dato {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    justify-content: left;
+  }
+
+  .container-dato img {
+    margin-left: 120px;
+    justify-content: left;
+  }
+
+  .ubicacionText {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .footerDescripion p {
+    margin-right: 100px;
+  }
+
+  .redes {
+    width: 100px;
+    margin-left: 0px;
+    justify-content: left;
+
+  }
+
+  .redes a {
+    width: 50px;
+    align-content: first baseline;
+    margin-left: 0px;
+    justify-content: left;
+    margin-right: 0px;
+
+  }
+
+  .redes.face {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .footerDescripion {
+    justify-content: left;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+}
